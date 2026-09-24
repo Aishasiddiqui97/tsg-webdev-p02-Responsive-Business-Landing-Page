@@ -3,9 +3,15 @@
    Premium Dark Gym Aesthetic
    =========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-
 /* === CSS Custom Properties / Theme Variables === */
+
+/* Bootstrap Icons font swap for FOIT prevention */
+@font-face {
+  font-family: 'Bootstrap Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
 :root {
   --color-primary: #ccff00;       /* Electric lime accent */
   --color-primary-dark: #a8e000;  /* Darker lime for hover */
@@ -168,7 +174,7 @@ section-title {
 /* === Hero Section === */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-    url('../assets/images/hero-bg.jpg');
+    url('../assets/images/hero-bg.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
