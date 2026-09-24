@@ -1,0 +1,12 @@
+﻿node : Error: Couldn't parse JSON file E:\Python.py\Tsg intenship\Responsive Business\vercel.json.
+At line:4 char:55
++ ... 8d1e0f7g4"; node "C:\Users\hp\AppData\Roaming\npm\node_modules\.verce ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: Couldn't...ss\vercel.json.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error: An unexpected error occurred!
+TypeError: Cannot read properties of undefined (reading 'config')
+    at canAutoUpdate 
+(file:///C:/Users/hp/AppData/Roaming/npm/node_modules/.vercel-nAayMQKB/dist/chunks/chunk-YE6OHHJA.js:2629:35)
+    at file:///C:/Users/hp/AppData/Roaming/npm/node_modules/.vercel-nAayMQKB/dist/index.js:2255:17

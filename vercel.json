@@ -1,28 +1,25 @@
 {
-  "rewrites": [
-    { "source": "/fonts/:path*", "destination": "/public/fonts/:path*" }
-  ],
   "headers": [
     {
-      "source": "/assets/images/(.*)\.webp",
+      "source": "/assets/images/(.*).webp",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "source": "/assets/icons/(.*)\.svg",
+      "source": "/assets/icons/(.*).svg",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "source": "/css/style\.min\.css",
+      "source": "/css/style.min.css",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "source": "/js/script\.min\.js",
+      "source": "/js/script.min.js",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
