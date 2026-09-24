@@ -145,6 +145,41 @@ Key metrics: FCP 3.6s, LCP 4.2s, TBT 0ms, CLS 0.005
 
 ---
 
+## Deployment
+
+### Required (by project brief): Public GitHub repository + Vercel deployment
+
+### Step 1: Create GitHub Repository
+
+1. Go to [GitHub](https://github.com/new)
+2. Repository name: `ironvault-fitness`
+3. Set to **Public**
+4. Initialize with a README
+5. After creation, run:
+   ```bash
+   git remote add origin https://github.com/<username>/ironvault-fitness.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+### Step 2: Deploy to Vercel
+
+**Option A — Import from GitHub (recommended):**
+1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Click **"New Project"** → Import your GitHub repository
+3. Framework Preset: **Other** (or leave as default)
+4. Click **"Deploy"**
+
+**Option B — Drag & Drop:**
+1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Click **"New Project"** → **"Import Project"** → **"Drag and Drop"**
+3. Drag the project folder onto the upload area
+4. Click **"Deploy"**
+
+The `vercel.json` configures caching headers for static assets (WebP images, minified CSS/JS).
+
+---
+
 ## Credits
 
 ### Third-Party Assets
