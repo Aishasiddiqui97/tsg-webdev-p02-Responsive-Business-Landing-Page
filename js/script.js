@@ -97,14 +97,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Show success message
         if (formSuccess) {
-          formSuccess.style.display = 'block';
+          formSuccess.classList.remove('d-none');
           formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
         // Hide success message after 6 seconds
         setTimeout(function () {
           if (formSuccess) {
-            formSuccess.style.display = 'none';
+            formSuccess.classList.add('d-none');
           }
         }, 6000);
       } else {

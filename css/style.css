@@ -32,6 +32,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -653,6 +654,8 @@ section-title {
 
 .map-wrapper iframe {
   display: block;
+  width: 100%;
+  border: 0;
 }
 
 /* Form styling */
@@ -689,7 +692,10 @@ section-title {
 }
 
 .form-control:invalid:focus:not(:placeholder-shown) + .invalid-feedback,
-.form-control.is-invalid + .invalid-feedback {
+.form-select:invalid + .invalid-feedback,
+.form-control.is-invalid + .invalid-feedback,
+.form-select.is-invalid + .invalid-feedback,
+textarea.form-control.is-invalid + .invalid-feedback {
   display: block;
 }
 
@@ -895,4 +901,30 @@ button:focus {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* === Utility Classes === */
+.mx-w-600 {
+  max-width: 600px;
+}
+
+.mx-w-650 {
+  max-width: 650px;
+}
+
+.form-success {
+  display: none;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* === Custom input styling (void elements) === */
+input.form-control,
+select.form-select,
+textarea.form-control {
+  /* Base styling already applied above */
 }
